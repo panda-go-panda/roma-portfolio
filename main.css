@@ -5,9 +5,11 @@ html, body {
 
 html {
     background: #CC2634 url(images/roma.jpg) left center no-repeat;
+    -webkit-background-size: 150%;
     background-size: 150%;
     font-size: 16px;
     height: 100%;
+    -webkit-transition: all 600ms linear;
     transition: all 600ms linear;
 }
 
@@ -15,6 +17,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 80%;
     color: #FFF;
+    -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
 }
 
@@ -107,6 +110,7 @@ section {
 /* Background-size */
 @media (max-width : 1000px) {
     html {
+        -webkit-background-size: cover;
         background-size: cover;
     }
 }
