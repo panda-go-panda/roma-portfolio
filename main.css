@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #CC2634 url(images/20150523-DSC_5461.jpg) left center no-repeat;
+    background-size: 150%;
+    font-size: 16px;
+    height: 100%;
+    transition: all 600ms linear;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80%;
+    color: #FFF;
+    transition: font-size 600ms linear;
+}
+
+a:hover,
+a:active,
+a:visited,
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: 10%;
+    margin-top: 10%;
+    transition: margin-top 600ms linear;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 10em;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
+    margin: 0;
+    padding: 0;
+}
+
+.title h1,
+.tagline p,
+.experience ul,
+.external-links ul {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.title h1 span,
+.tagline p span,
+.experience ul li,
+.external-links ul li {
+    position: relative;
+    z-index: 2;
+}
+
+.title h1:after,
+.tagline p:after,
+.experience ul:after,
+.external-links ul:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: #CC2634;
+    width: 98%;
+    height: 60%;
+    bottom: 0.35em;
+    left: -0.03em;
+}
+
+.tagline p,
+.inline-list li {
+    font-size: 2em;
+}
+
+.inline-list {
+    list-style: none;
+}
+
+.inline-list li {
+    display: inline;
+}
+
+.inline-list li + li:before {
+    content: " / ";
+    display: inline;
+    padding: 0 0.5em;
+}
+
+.tagline {
+    margin-top: 2em;
+}
+
+.external-links {
+    margin-top: 2em;
+}
+
+/* Background-size */
+@media (max-width : 1000px) {
+    html {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 600px)  {
+    html {
+        background-position: center;
+    }
+
+    body {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 500px)  {
+    body {
+        font-size: 50%;
+    }
+    
+    section {
+        margin-top: 100%;
+    }
+}
