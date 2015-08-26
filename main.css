@@ -21,6 +21,7 @@ body {
     color: #FFF;
     -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
+    overflow: hidden;
 }
 
 a:hover,
@@ -119,6 +120,7 @@ section {
     
     body {
         font-size: 70%;
+        overflow: hidden;
     }
 }
 
@@ -130,6 +132,7 @@ section {
       
         body {
             font-size: 70%;
+            overflow: hidden;
         }
 
 }
@@ -146,7 +149,7 @@ section {
             background-position: 45% 50%;
         }
         section {
-            margin-top: 70%;
+            margin-top: 65%;
         }
 }
 /* ----------- iPhone 4, 5, 5s ----------- */
@@ -157,6 +160,7 @@ section {
       
     body {
         font-size: 30%;
+        overflow: hidden;
     }
     section {
           margin-top: 10%;
@@ -196,6 +200,7 @@ section {
   and (max-width: 667px) {
       body {
         font-size: 40%;
+        overflow: hidden;
       }
 }
 
@@ -223,6 +228,7 @@ section {
   and (max-width: 736px) { 
       body {
         font-size: 40%;
+        overflow: hidden;
       }
 }
 
