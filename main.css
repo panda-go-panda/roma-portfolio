@@ -116,6 +116,7 @@ section {
     html {
         -webkit-background-size: cover;
         background-size: cover;
+        overflow: hidden;
     }
     
     body {
@@ -129,10 +130,11 @@ section {
 @media only screen 
     and (min-width: 768px) 
     and (max-width: 1024px) {
-      
+        html {
+            overflow: hidden;
+        }
         body {
             font-size: 70%;
-            overflow: hidden;
         }
 
 }
@@ -157,14 +159,15 @@ section {
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 568px) {
-      
-    body {
-        font-size: 30%;
-        overflow: hidden;
-    }
-    section {
+      html {
+          overflow: hidden;
+      }  
+      body {
+          font-size: 30%;
+      }
+      section {
           margin-top: 10%;
-    }
+      }
 }
 
 /*portrait mobile*/
@@ -176,6 +179,7 @@ section {
         background-size: cover;
         -webkit-background-size: cover;
         background-position: 40% 20%;
+        overflow: hidden;
     }
     
       
@@ -189,6 +193,7 @@ section {
         -webkit-background-size: 150%;
         background-size: 150%;
         background-position: left;
+        overflow: hidden;
     }
 }
 
@@ -200,7 +205,6 @@ section {
   and (max-width: 667px) {
       body {
         font-size: 40%;
-        overflow: hidden;
       }
 }
 
@@ -213,10 +217,11 @@ section {
         -webkit-background-size: 150%;
         background-size: 150%;
         background-position: left;
+        overflow: hidden;
       }
       
       section {
-          margin-top: 10%;
+        margin-top: 10%;
       }
 }
 
@@ -226,9 +231,11 @@ section {
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px) { 
+      html {
+          overflow: hidden;
+      }
       body {
-        font-size: 40%;
-        overflow: hidden;
+          font-size: 40%;
       }
 }
 
@@ -239,9 +246,10 @@ section {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
       html {
-        -webkit-background-size: 150%;
-        background-size: 150%;
-        background-position: left;
+          -webkit-background-size: 150%;
+          background-size: 150%;
+          background-position: left;
+          overflow: hidden;
       }
       
       section {
