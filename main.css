@@ -13,6 +13,7 @@ html {
     -webkit-transition: all 600ms linear;
     transition: all 600ms linear;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 body {
@@ -21,7 +22,6 @@ body {
     color: #FFF;
     -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
-    overflow: hidden;
 }
 
 a:hover,
@@ -120,7 +120,7 @@ section {
     
     body {
         font-size: 70%;
-        overflow: hidden;
+        height: 100%;
     }
 }
 
