@@ -12,6 +12,8 @@ html {
     height: 100%;
     -webkit-transition: all 600ms linear;
     transition: all 600ms linear;
+     -webkit-transition: background-size 0ms;
+    transition: background-size 0ms;
     padding-bottom: 50px;
 }
 
