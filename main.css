@@ -13,7 +13,6 @@ html {
     -webkit-transition: all 600ms linear;
     transition: all 600ms linear;
     padding-bottom: 50px;
-    overflow: hidden;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
     color: #FFF;
     -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
+    overflow: hidden;
 }
 
 a:hover,
@@ -116,27 +116,24 @@ section {
     html {
         -webkit-background-size: cover;
         background-size: cover;
-        overflow: hidden;
     }
     
     body {
         font-size: 70%;
         height: 100%;
+        overflow: hidden;
     }
 }
 
-/* ----------- iPad 3 and 4 ----------- */
+/* ----------- iPad ----------- */
 /* Portrait and Landscape */
 @media only screen 
     and (min-width: 768px) 
     and (max-width: 1024px) {
-        html {
-            overflow: hidden;
-        }
         body {
             font-size: 70%;
+            overflow: hidden;
         }
-
 }
 
 /* Portrait */
@@ -154,20 +151,19 @@ section {
             margin-top: 65%;
         }
 }
+
 /* ----------- iPhone 4, 5, 5s ----------- */
 /* Portrait and Landscape mobile*/
 @media only screen 
   and (min-width: 320px) 
-  and (max-width: 568px) {
-      html {
-          overflow: hidden;
-      }  
-      body {
-          font-size: 30%;
-      }
-      section {
+  and (max-width: 568px) {      
+    body {
+        font-size: 30%;
+        overflow: hidden;
+    }
+    section {
           margin-top: 10%;
-      }
+    }
 }
 
 /*portrait mobile*/
@@ -179,7 +175,6 @@ section {
         background-size: cover;
         -webkit-background-size: cover;
         background-position: 40% 20%;
-        overflow: hidden;
     }
     
       
@@ -193,7 +188,6 @@ section {
         -webkit-background-size: 150%;
         background-size: 150%;
         background-position: left;
-        overflow: hidden;
     }
 }
 
@@ -205,6 +199,7 @@ section {
   and (max-width: 667px) {
       body {
         font-size: 40%;
+        overflow: hidden;
       }
 }
 
@@ -217,11 +212,10 @@ section {
         -webkit-background-size: 150%;
         background-size: 150%;
         background-position: left;
-        overflow: hidden;
       }
       
       section {
-        margin-top: 10%;
+          margin-top: 10%;
       }
 }
 
@@ -231,11 +225,9 @@ section {
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px) { 
-      html {
-          overflow: hidden;
-      }
       body {
-          font-size: 40%;
+        font-size: 40%;
+        overflow: hidden;
       }
 }
 
@@ -246,14 +238,12 @@ section {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
       html {
-          -webkit-background-size: 150%;
-          background-size: 150%;
-          background-position: left;
-          overflow: hidden;
+        -webkit-background-size: 150%;
+        background-size: 150%;
+        background-position: left;
       }
       
       section {
           margin-top: 10%;
       }
-
 }
