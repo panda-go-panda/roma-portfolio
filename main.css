@@ -116,11 +116,10 @@ section {
 }
 
 /* Background-size */
-@media (max-width : 1000px) {
+@media (max-width : 1024px) {
     html {
         -webkit-background-size: cover;
         background-size: cover;
-        height: 100%;
     }
     
     body {
@@ -149,6 +148,9 @@ section {
             -webkit-background-size: 300%;
             background-size: 300%;
             background-position: 45% 50%;
+        }
+        body {
+            height: 100%;
         }
         section {
             margin-top: 65%;
