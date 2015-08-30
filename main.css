@@ -120,12 +120,12 @@ section {
     html {
         -webkit-background-size: cover;
         background-size: cover;
-        height: 100%;
     }
     
     body {
         font-size: 70%;
         height: 100%;
+        overflow: hidden;
     }
 }
 
@@ -149,7 +149,6 @@ section {
             background-size: 300%;
             background-position: 45% 50%;
         }
-        
         body {
             height: 100%;
         }
