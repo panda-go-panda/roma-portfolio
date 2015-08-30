@@ -137,7 +137,6 @@ section {
     and (max-width: 1024px) {
         body {
             font-size: 70%;
-            overflow: hidden;
         }
 }
 
@@ -208,7 +207,6 @@ section {
   and (max-width: 667px) {
       body {
         font-size: 40%;
-        overflow: hidden;
       }
 }
 
@@ -245,7 +243,6 @@ section {
   and (max-width: 736px) { 
       body {
         font-size: 40%;
-        overflow: hidden;
       }
 }
 
