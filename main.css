@@ -196,7 +196,7 @@ section {
     html {
         background-size: cover;
         -webkit-background-size: cover;
-        background-position: 35% 20%;
+        background-position: 33% 20%;
     }
     
       
@@ -223,6 +223,16 @@ section {
         font-size: 40%;
       }
 }
+
+@media only screen 
+    and (min-width: 375px)  
+    and (orientation: portrait) {
+        html {
+            background-size: cover;
+            -webkit-background-size: cover;
+            background-position: 33% 20%;
+    }
+
       
 /* Landscape */
 @media only screen 
