@@ -39,13 +39,26 @@
         </section>
 
         <script>
-            setTimeout(function () {
-                var img = new Image();
-                img.onload= function () {
-                    document.documentElement.style.backgroundImage = 'url(' + this.src + ')';
-                };
-                img.src = 'images/roma.jpg';     
-            }, 100);
+            (function () {
+                var images = [
+                    'images/roma-3.jpg',
+                    'images/roma-2.jpg',
+                    'images/roma-1.jpg',
+                    'images/roma-0.jpg'
+                ];
+
+                for (var i = 0; i < images.length; i++) {
+                    (function (index, src) {
+                        setTimeout(function () {
+                            var img = new Image();
+                            img.onload= function () {
+                                document.documentElement.style.backgroundImage = 'url(' + src + ')';
+                            };
+                            img.src = src;
+                        }, 600 * index);
+                    }(i, images[i]));
+                }
+            }());
         </script>
     </body>
 </html>
