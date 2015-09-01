@@ -165,7 +165,8 @@ section {
             background-position: 45% 50%;
         }
         section {
-            margin-top: 500px;
+            margin-top: 470px;
+            padding-bottom: 0;
         }
 }
 
