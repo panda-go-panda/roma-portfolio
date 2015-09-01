@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 html {
@@ -11,7 +13,6 @@ html {
     font-weight: 500;
     -webkit-transition: background-image 600ms linear;
     transition: background-image 600ms linear;
-    padding-bottom: 50px;
 }
 
 body {
@@ -20,7 +21,8 @@ body {
     color: #FFF;
     -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
-    
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a:hover,
@@ -39,6 +41,7 @@ h1, h2, h3, p, ul, li {
 section {
     margin-left: 10%;
     margin-top: 7%;
+    padding-bottom: 50px;
     transition: margin-top 600ms linear;
 }
 
@@ -134,13 +137,10 @@ section {
     html {
         -webkit-background-size: cover;
         background-size: cover;
-        height: 100%;
     }
     
     body {
         font-size: 70%;
-        height: 100%;
-        overflow: hidden;
     }
 }
 
@@ -165,7 +165,7 @@ section {
             background-position: 45% 50%;
         }
         section {
-            margin-top: 65%;
+            margin-top: 500px;
         }
 }
 
@@ -176,12 +176,11 @@ section {
   and (max-width: 568px) {      
     body {
         font-size: 30%;
-        overflow: hidden;
     }
     
     .title h1 {
         font-size: 9em;
-      }
+    }
 
     section {
           margin-top: 10%;
@@ -222,15 +221,6 @@ section {
       body {
         font-size: 40%;
       }
-}
-
-@media only screen 
-    and (min-device-width: 667px) 
-    and (max-device-width: 375px) 
-    and (orientation: portrait) { 
-        html {
-            height: 509px;
-        }
 }
       
 /* Landscape */
