@@ -11,8 +11,8 @@ html {
     background-size: 150%;
     font-size: 16px;
     font-weight: 500;
-    -webkit-transition: background-image 600ms linear;
-    transition: background-image 600ms linear;
+    /*-webkit-transition: background-image 600ms linear;
+    transition: background-image 600ms linear;*/
 }
 
 body {
