@@ -39,13 +39,13 @@
         </section>
 
         <script>
-            (function () {
+            setTimeout(function () {
                 var img = new Image();
                 img.onload= function () {
                     document.documentElement.style.backgroundImage = 'url(' + this.src + ')';
                 };
                 img.src = 'images/roma.jpg';     
-            }());
+            }, 100);
         </script>
     </body>
 </html>
