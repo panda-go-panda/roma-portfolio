@@ -25,6 +25,11 @@ body {
     
 }
 
+body:before {
+    content: url(/images/roma-2.jpg);
+    display:none;
+}
+
 a:hover,
 a:active,
 a:visited,
