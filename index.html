@@ -11,6 +11,9 @@
     </head>
 
     <body>
+        <div id="div_whatever"></div>
+        <img id="img_whatever" class="hidden" src="images/roma-2.jpg" onload="upgradeImage(this);">
+        
         <section>
             <div class="title">
                 <h1><span>Roma</span></h1>
@@ -38,11 +41,15 @@
             </div>
             
         </section>
+        <script>
+        function upgradeImage(object) {
+            var id = object.id;
+            var target = "div_" + id.substring(4);
+            document.getElementById(target).style.backgroundImage = "url(" + object.src + ")";
+        }
+        </script>
         
         <script>document.body.scrollTop = 1;</script>
-        <div id="preload">
-            <img src="/images/roma.jpg" width="1" height="1" alt="Image 01" />
-            
-</div>
+        
     </body>
 </html>

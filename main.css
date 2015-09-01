@@ -3,6 +3,20 @@ html, body {
     padding: 0;
 }
 
+/*Preloader */
+
+.hidden {
+   display: none;
+}
+
+#div_whatever {
+   position: left center;
+   background-repeat: no-repeat;
+   background-position: whatever whatever; 
+   background-image: url(images/roma-2.jpg);
+   /* image.jpg is a low-resolution at 30% quality. */
+}
+
 html {
     background: #CC2634 url(images/roma.jpg) left center no-repeat;
     -webkit-background-size: 150%;
@@ -24,8 +38,6 @@ body {
     transition: font-size 600ms linear;
     
 }
-
-div#preload { display: none; }
 
 a:hover,
 a:active,
