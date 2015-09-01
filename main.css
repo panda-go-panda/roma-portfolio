@@ -40,7 +40,7 @@ h1, h2, h3, p, ul, li {
 
 section {
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 7%;
     transition: margin-top 600ms linear;
 }
 
@@ -49,6 +49,7 @@ section {
     font-size: 10em;
     margin: 0;
     padding: 0;
+    line-height: 1.1;
 }
 
 .title h1,
@@ -57,18 +58,33 @@ section {
 .external-links ul {
     position: relative;
     display: inline-block;
-    line-height: 1.2;
 }
 
 .title h1 span,
 .tagline p span,
 .experience ul li,
-.external-links ul li {
+.external-links ul {
     position: relative;
     z-index: 2;
+    background-color: #CC2634;
 }
 
-.title h1:after,
+.tagline p,
+.external-links ul {
+    position: relative;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.experience {
+    margin-top: -2.4em
+}
+
+.external-links ul{
+    margin-top: 1em;
+}
+
+/*.title h1:after,
 .tagline p:after,
 .experience ul:after,
 .external-links ul:after {
@@ -85,7 +101,7 @@ section {
 .experience ul:after{
     height: 75%;
     top: 0.35em
-}
+} */
 
 .tagline p,
 .inline-list li {
@@ -107,8 +123,8 @@ section {
 }
 
 .tagline {
-    margin-top: 2em;
-    margin-bottom: -0.6em;
+    margin-top: 5em;
+    margin-bottom: 2em;
 }
 
 .external-links {
