@@ -25,10 +25,7 @@ body {
     
 }
 
-body:before {
-    content: url(/images/roma-2.jpg) url(/images/roma.jpg);
-    display:none;
-}
+div#preload { display: none; }
 
 a:hover,
 a:active,
