@@ -11,9 +11,6 @@
     </head>
 
     <body>
-        <div id="div_whatever"></div>
-        <img id="img_whatever" class="hidden" src="images/roma-2.jpg" onload="upgradeImage(this);">
-        
         <section>
             <div class="title">
                 <h1><span>Roma</span></h1>
@@ -27,7 +24,7 @@
 
             <div class="experience">
                 <ul class="inline-list">
-                    <li><a href="https://sbis.ru/">Tensor</a></li><li><a href="https://company.yandex.com">Yandex</a></li><li><a href="http://tsentsiper.com/en/">Tsentsiper</a></li><li>
+                    <li><a href="https://sbis.ru">Tensor</a></li><li><a href="https://company.yandex.com">Yandex</a></li><li><a href="http://tsentsiper.com/en/">Tsentsiper</a></li><li>
                     <br/><a href="https://www.jetbrains.com">JetBrains</a></li>
                 </ul>
             </div>
@@ -39,17 +36,16 @@
                     <li><a href="#">CV</a></li>
                 </ul>
             </div>
-            
         </section>
+
         <script>
-        function upgradeImage(object) {
-            var id = object.id;
-            var target = "div_" + id.substring(4);
-            document.getElementById(target).style.backgroundImage = "url(" + object.src + ")";
-        }
+            (function () {
+                var img = new Image();
+                img.onload= function () {
+                    document.documentElement.style.backgroundImage = 'url(' + this.src + ')';
+                };
+                img.src = 'images/roma.jpg';     
+            }());
         </script>
-        
-        <script>document.body.scrollTop = 1;</script>
-        
     </body>
 </html>
