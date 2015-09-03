@@ -6,9 +6,10 @@ html, body {
 }
 
 html {
-    background: #CC2634 url(images/roma-4.jpg) left center no-repeat;
+    background: #CC2634 url(images/roma-4.jpg) no-repeat;
     -webkit-background-size: 150%;
     background-size: 150%;
+    background-position: 5% 50%;
     font-size: 16px;
     font-weight: 500;
     /*-webkit-transition: background-image 600ms linear;
@@ -17,7 +18,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 80%;
+    font-size: 90%;
     color: #FFF;
     -webkit-transition: font-size 600ms linear;
     transition: font-size 600ms linear;
@@ -31,6 +32,10 @@ a:visited,
 a {
     text-decoration: none;
     color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, p, ul, li {
@@ -70,19 +75,20 @@ section {
     background-color: #CC2634;
 }
 
-.tagline p,
-.external-links ul {
+.tagline p span,
+.experience ul li,
+.external-links ul li{
     position: relative;
     display: inline-block;
-    line-height: 1.5;
+    line-height: 1.8em;
+    height: 1.8em;
 }
 
-.experience {
-    margin-top: -2.4em
+.tagline {
+    margin-top: 3.5em;
 }
-
-.external-links ul{
-    margin-top: 1em;
+.external-links {
+    margin-top: 3em;
 }
 
 /*.title h1:after,
@@ -123,14 +129,9 @@ section {
     padding: 0 0.2em;
 }
 
-.tagline {
-    margin-top: 5em;
-    margin-bottom: 2em;
-}
 
-.external-links {
-    margin-top: 2em;
-}
+
+
 
 /* Background-size */
 @media (max-width : 1000px) {
@@ -165,7 +166,7 @@ section {
             background-position: 45% 50%;
         }
         section {
-            margin-top: 470px;
+            margin-top: 450px;
             padding-bottom: 0;
         }
 }
