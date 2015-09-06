@@ -60,7 +60,7 @@ section {
 
 .title,
 .tagline,
-.experience ul,
+.experience,
 .external-links ul {
     position: relative;
     display: inline-block;
@@ -68,7 +68,7 @@ section {
 
 .title span,
 .tagline,
-.experience ul li,
+.experience,
 .external-links ul {
     position: relative;
     z-index: 2;
@@ -76,7 +76,7 @@ section {
 }
 
 .tagline,
-.experience ul li,
+.experience,
 .external-links ul li{
     position: relative;
     display: inline-block;
@@ -84,9 +84,6 @@ section {
     height: 1.8em;
 }
 
-.tagline {
-    margin-top: 3.5em;
-}
 .external-links {
     margin-top: 3em;
 }
