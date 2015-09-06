@@ -59,7 +59,7 @@ section {
 }
 
 .title,
-.tagline p,
+.tagline,
 .experience ul,
 .external-links ul {
     position: relative;
@@ -67,7 +67,7 @@ section {
 }
 
 .title span,
-.tagline p span,
+.tagline,
 .experience ul li,
 .external-links ul {
     position: relative;
@@ -75,7 +75,7 @@ section {
     background-color: #CC2634;
 }
 
-.tagline p span,
+.tagline,
 .experience ul li,
 .external-links ul li{
     position: relative;
@@ -110,7 +110,7 @@ section {
     top: 0.35em
 } */
 
-.tagline p,
+.tagline,
 .inline-list li {
     font-size: 2em;
 }
